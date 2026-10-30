@@ -7,14 +7,15 @@ Build useful open-source features through design, implementation, documentation,
 ## Current feature: offline COGX archive inspection
 
 - Code: https://github.com/ajeya-krishna/cognee/tree/feat/cogx-archive-inspection
-- Commit: 8a77cf796b5ee99302d6c6c193ea2850026ca5c4
+- Implementation commit: 8a77cf796b5ee99302d6c6c193ea2850026ca5c4
+- Current head after comment cleanup: 188f44f20
 - Guide: https://github.com/ajeya-krishna/cognee/blob/feat/cogx-archive-inspection/docs/cogx-inspection.md
 - Demo: https://github.com/ajeya-krishna/cognee/blob/feat/cogx-archive-inspection/examples/guides/inspect_cogx_archive.py
-- Create upstream PR against dev: https://github.com/topoteretes/cognee/compare/dev...ajeya-krishna:feat/cogx-archive-inspection?expand=1
-- Status: implemented and pushed as a feature proposal; maintainer acceptance of this API has not been established.
+- Upstream PR against dev: https://github.com/topoteretes/cognee/pull/6452
+- Status: PARKED at the user's request on 2026-10-30. The user created PR #6452; it is open and awaits maintainer review. Focus has moved to feature opportunities in other repositories.
 - Validation: 459 migration and CLI tests passed (30 warnings), including 34 new inspection/CLI cases. Ruff and applicable pre-commit hooks passed. The runnable demo passed. Full repository suite was not run.
-- Upstream proposal issue creation returned HTTP 403: Resource not accessible by integration. No new upstream issue or PR was created.
-- PR creation remains with the contributor. The upstream PR template requires a human-written description; CONTRIBUTING.md requires screenshots of passing tests. Test text logs are evidence, not screenshots.
+- The separate proposal issue attempt returned HTTP 403. The user subsequently created PR #6452 directly.
+- PR creation was completed by the contributor. 34 affected tests were rerun after comment/docstring cleanup and passed. No upstream CI result or maintainer acceptance is implied by local test results.
 - The previous Cypher property-name fix PR #6396 remains parked; this feature is a separate branch.
 
 ## Working approach
@@ -29,7 +30,7 @@ Build useful open-source features through design, implementation, documentation,
 
 For this feature, three sub-agents researched opportunities, implemented the inspection core, wrote independent tests, and reviewed edge cases. The parent integrated the CLI, docs, runnable example, fresh-process checks, review fixes, and publication.
 
-## Proposal text
+## Original proposal text
 
 ## User workflow
 
